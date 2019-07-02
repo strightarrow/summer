@@ -1,3 +1,4 @@
+#Define variables
 v1 = input ("Enter your name: ")
 v2 = input ("Enter an adjective: ")
 v3 = input ("Enter an adjective: ")
@@ -8,6 +9,7 @@ v7 = input ("Enter a noun: ")
 v8 = input ("Enter a place: ")
 v9 = input ("Enter verb: ")
 
+#Output based on variables
 print (v1 + " was planning a dream vacation to " + v8 + ".")
 print (v1 + " was especially looking forward to trying the local")
 print ("cuisine, including " + v2 + " " + v5 + " and " + v6 + ".")
