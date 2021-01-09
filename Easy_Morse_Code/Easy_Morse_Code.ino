@@ -12,39 +12,39 @@ int dot = 600;
 
 
 int dash = dot * 3;
-//Simple Morse Code program allows easy use of morse code through a blinking light on pin 13 and ground.
-//Program is capable of using all letters, numbers 0-9, and question and exclamation marks.
-//All letters are capitals except for "f" which is lowercase. Ex: A(); , f();
-//All numbers begin with "Num" the the number. Ex: Num6();
-//Question and exclamation marks first letter of the name, then "mark". Ex: Qmark(); , Emark();
+//This simple Morse Code program allows easy use of morse code through a blinking light on pin 13 and ground.
+//Program is capable of using all 40 base Morse Code characters: All letters, numbers 0-9, period, comma, question and exclamation marks.
+//All letters are s lowercase. Ex: a(); , f(); , x();
+//All numbers begin with "Num" followed by the number. Ex: Num6();
+//Punctuation marks start with the a capitalized first letter of the name of the mark followed by "mark". Ex: Pmark(); , Cmark(); , Qmark(); , Emark(); 
 void loop() {
 //after each word, insert a "delay(dash);" command.
 //After each sentence, insert a "delay(dash + dash)" command.
-A();
-R();
-D();
-U();
-I();
-N();
-O();
-S();
+a();
+r();
+d();
+u();
+i();
+n();
+o();
+s();
 delay(dash);
-A();
-R();
-E();
+a();
+r();
+e();
 delay(dash);
-A();
-W();
-E();
-S();
-O();
-M();
-E();
+a();
+w();
+e();
+s();
+o();
+m();
+e();
 Emark();
 delay(dash + dash);
 }
 
-void A(){
+void a(){
 digitalWrite(13, HIGH);
 delay(dot);
 digitalWrite(13, LOW);
@@ -55,47 +55,13 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void B(){
+void b(){
 digitalWrite(13, HIGH);
 delay(dash);
 digitalWrite(13, LOW);
 delay(dot);
 digitalWrite(13, HIGH);
 delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void C(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void D(){
-digitalWrite(13, HIGH);
-delay(dash);
 digitalWrite(13, LOW);
 delay(dot);
 digitalWrite(13, HIGH);
@@ -108,7 +74,41 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void E(){
+void c(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void d(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void e(){
 digitalWrite(13, HIGH);
 delay(dot);
 digitalWrite(13, LOW);
@@ -134,7 +134,7 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void G(){
+void g(){
 digitalWrite(13, HIGH);
 delay(dash);
 digitalWrite(13, LOW);
@@ -147,404 +147,7 @@ digitalWrite(13, HIGH);
 delay(dot + dash);
 }
 
- void H(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void I(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void J(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void K(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void L(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void M(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void N(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void O(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void P(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Q(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void R(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void S(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void T(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void U(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void V(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void W(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void X(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Y(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Z(){
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Num1(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Num2(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Num3(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Num4(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
-digitalWrite(13, HIGH);
-delay(dash);
-digitalWrite(13, LOW);
-delay(dot + dash);
-}
-
-void Num5(){
-digitalWrite(13, HIGH);
-delay(dot);
-digitalWrite(13, LOW);
-delay(dot);
+void h(){
 digitalWrite(13, HIGH);
 delay(dot);
 digitalWrite(13, LOW);
@@ -563,9 +166,383 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void Num6(){
+void i(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void j(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
 digitalWrite(13, HIGH);
 delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void k(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void l(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void m(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void n(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void o(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void p(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void q(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void r(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void s(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void t(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void u(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void v(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void w(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void x(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void y(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void z(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void num1(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void num2(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void num3(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void num4(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void num5(){
+digitalWrite(13, HIGH);
+delay(dot);
 digitalWrite(13, LOW);
 delay(dot);
 digitalWrite(13, HIGH);
@@ -586,7 +563,30 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void Num7(){
+void num6(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void num7(){
 digitalWrite(13, HIGH);
 delay(dash);
 digitalWrite(13, LOW);
@@ -609,7 +609,7 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void Num8(){
+void num8(){
 digitalWrite(13, HIGH);
 delay(dash);
 digitalWrite(13, LOW);
@@ -632,7 +632,7 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void Num9(){
+void num9(){
 digitalWrite(13, HIGH);
 delay(dash);
 digitalWrite(13, LOW);
@@ -655,7 +655,7 @@ digitalWrite(13, LOW);
 delay(dot + dash);
 }
 
-void Num0(){
+void num0(){
 digitalWrite(13, HIGH);
 delay(dash);
 digitalWrite(13, LOW);
@@ -666,6 +666,60 @@ digitalWrite(13, LOW);
 delay(dot);
 digitalWrite(13, HIGH);
 delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void Pmark(){
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot + dash);
+}
+
+void Cmark(){
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dash);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
+digitalWrite(13, LOW);
+delay(dot);
+digitalWrite(13, HIGH);
+delay(dot);
 digitalWrite(13, LOW);
 delay(dot);
 digitalWrite(13, HIGH);
