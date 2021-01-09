@@ -1,5 +1,5 @@
 # Code by Connor Killman
-#Lines 3-11 and 90-164 Curtesy of C.W. Coleman
+# Lines 3-11 and 90-164 Curtesy of C.W. Coleman
 # Base project format.
 # 127.0.0.1 is locahost (the computer you are working on)
 from mcpi.minecraft import Minecraft
